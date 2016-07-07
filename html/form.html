@@ -6,24 +6,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>NextGen Cohort Electronic Consent Form</title>
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="jquery/jquery-1.7.2.min.js"></script>
-  <script type="text/javascript" src="dependsOn-1.0.0.min.js"></script>
+
 <script>
-$(document).ready(function(){
-    $('[data-toggle="popover"]').popover(); 
-});
-</script>
-<script>
-$('#myText').dependsOn({
+/*$('#myText').dependsOn({
 	// The selector for the depenency
 	'#myCheck': {
 		// The dependency qualifiers
 		enabled: true,
 		checked: true
 	}
-});
+});*/
 </script>
 
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
@@ -49,7 +41,7 @@ $('#myText').dependsOn({
 
                     <div class="row" style="margin-bottom:10px">
                         <label class="col-sm-2">Name</label>
-                        <div class="col-sm-2"><input type="text" class="form-control" id="first_name" value="Scott" required/></div>
+                        <div class="col-sm-2"><input type="text" class="form-control" id="name" value="Scott" required/></div>
                          <label class="col-sm-2">Email</label>
                         <div class="col-sm-2"><input type="email" class="form-control" id="email"value="Scott.Goldweber@winterfell.com" required/></div>
                        
@@ -59,13 +51,13 @@ $('#myText').dependsOn({
                         
 </div></div>
   <div align="center">
-<button type="button" id="submit" class="btn btn-success"><span class="glyphicon glyphicon-ok-sign"></span> Submit</button>
+<button type="button" id="submit" class="btn btn-success" onclick="Create_PDF()"><span class="glyphicon glyphicon-ok-sign"></span> Submit</button>
 
 
 </form>
 
 <script>
-$('#submit').prop('disabled', true);
+/*$('#submit').prop('disabled', true);
 $('#consent :checkbox').change(function () {
     var a = $('#consent :checked').filter(":checked").length;
     if (a == 2) {
@@ -73,7 +65,7 @@ $('#consent :checkbox').change(function () {
     } else {
         $('#submit').prop('disabled', true);
     }
-});
+});*/
 </script>
   
 </div>
@@ -82,6 +74,9 @@ $('#consent :checkbox').change(function () {
 <ul class="pager">
 <li><a href="questions.html"><span class="glyphicon glyphicon-arrow-left"></span> Previous</a></li>
 </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-browser/0.0.7/jquery.browser.min.js"></script>
+<script type="text/javascript" src="../js/create_docs.js"></script>
 
 </body>
 </html>
