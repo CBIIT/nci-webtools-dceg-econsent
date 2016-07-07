@@ -8,3 +8,21 @@
  -webkit-column-gap:10px; 
  column-gap:10px; 
 }
+
+@page {
+ 
+  @bottom-center {
+    content: " Page " counter(page) " of " counter(pages);
+  }
+}
+@media all {
+    .page-break { display: none; }
+}
+
+@media print {
+    .page-break { display: block; page-break-before: always; }
+}
+ ol
+    {margin-bottom:0in;}
+ul
+    {margin-bottom:0in;}
