@@ -8,7 +8,6 @@
  -webkit-column-gap:10px; 
  column-gap:10px; 
 }
-
 @page {
  
   @bottom-center {
@@ -26,3 +25,4 @@
     {margin-bottom:0in;}
 ul
     {margin-bottom:0in;}
+
