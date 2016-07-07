@@ -3,6 +3,10 @@ import re
 import string
 from flask import Flask, render_template, request, jsonify, make_response, send_from_directory
 import json
+import csv
+import random
+import subprocess
+from weasyprint import HTML, CSS
 import urllib
 
 # Load Env variables
@@ -17,6 +21,15 @@ def index():
 @app.route('/eConsentRest/', methods = ['POST'])
 def store():
 	
+	mimetype = 'application/json'
+	data = json.loads(request.stream.read())
+	name = data["name"]
+	email= data["email"]
+	page=data["page"].encode('utf-8').strip()
+	token_id=random.randrange(1, 1000000)
+
+	HTML(string=page).write_pdf('./content/consent_form'+str(token_id)+'.pdf',
+    	stylesheets=[CSS('./css/style.css')])
 	return str("")
 
 @app.after_request
