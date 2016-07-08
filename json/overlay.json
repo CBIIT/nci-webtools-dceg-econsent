@@ -1,23 +1,67 @@
-{"What will I be asked to do?":{
-	"Surveys" : {
-		"header": "Surveys",
-		"content": "Periodically during the study, you will receive an email with a link to the surveys which will all be completed online at a time that is convenient to you. The surveys will vary in length and will take as little as 5 minutes or up to one hour to complete (?). You will have the option to stop before completing the survey as your responses will be saved and you can resume  at a later time. Questions may include things like x,y,z. You can skip any questions that make you uncomfortable."
-	},
-	"BiologicalSamples":{
-		"header":"Biological Samples",
-		"content":"If you decide to participate, we will ask you to provide a blood and urine sample now and approximately every 2 years from your first donation. You can donate these samples during a routine visit to your healthcare provider or at a time that is convenient to you."
-	},
-	"MedicalRecords":{
-		"header":"Medical Records",
-		"content":"We will work with your health care provider to access your medical records to collect specific information about your health. For example, medications you use, health conditions, and medical procedures."
+{
+	"What will I be asked to do?":{
+		"Surveys" : {
+			"header": "Surveys",
+			"content": "Periodically during the study, you will receive an email with a link to the surveys which will all be completed online at a time that is convenient to you. The surveys will vary in length and will take as little as 5 minutes or up to one hour to complete (?). You will have the option to stop before completing the survey as your responses will be saved and you can resume  at a later time. Questions may include things like x,y,z. You can skip any questions that make you uncomfortable."
+		},
+		"BiologicalSamples":{
+			"header":"Biological Samples",
+			"content":"If you decide to participate, we will ask you to provide a blood and urine sample now and approximately every 2 years from your first donation. You can donate these samples during a routine visit to your healthcare provider or at a time that is convenient to you."
+		},
+		"MedicalRecords":{
+			"header":"Medical Records",
+			"content":"We will work with your health care provider to access your medical records to collect specific information about your health. For example, medications you use, health conditions, and medical procedures."
 
+		},
+		"FirstSurvey":{
+			"header":"First Survey and Blood & Urine Collections",
+			"content":"After completing the consent you will receive an email with a link to the first online survey. You can complete this at any time that is convenient to you in the next few weeks. At your next visit to your blood draw clinic, the staff will ask you to provide a urine sample and will collect up to 3 tablespoons (45mls) of blood. We will ask that you wait for at least 1 week after completing your consent to allow the oredrs to be placed. We also ask that you attend the blood draw clinic between Monday and Thursday to allow time to process your samples."
+		},
+		"LengthStudy":{
+			"header":"Length of the Study",
+			"content":"This study will continue for at least 20 years.  You may choose not to participate in any part of this study.  We will continue to follow you for all parts of the study for which you do wish to participate, including future studies."
+		}
 	},
-	"FirstSurvey":{
-		"header":"First Survey and Blood & Urine Collections",
-		"content":"After completing the consent you will receive an email with a link to the first online survey. You can complete this at any time that is convenient to you in the next few weeks. At your next visit to your blood draw clinic, the staff will ask you to provide a urine sample and will collect up to 3 tablespoons (45mls) of blood. We will ask that you wait for at least 1 week after completing your consent to allow the oredrs to be placed. We also ask that you attend the blood draw clinic between Monday and Thursday to allow time to process your samples."
+	"How will my information be used?":{
+		"Specimens":{
+			"header":"Use of Data and Specimens",
+			"content":"Examples of the types of research we may conduct include, but are not limited to, assessments of lifestyle, environmental exposures and geneticfactors and risk of disease."
+		}
 	},
-	"LengthStudy":{
-		"header":"Length of the Study",
-		"content":"This study will continue for at least 20 years.  You may choose not to participate in any part of this study.  We will continue to follow you for all parts of the study for which you do wish to participate, including future studies."
+	"Who will have access to my data?":{
+		"Data_Sharing":{
+			"header":"Data Sharing",
+			"content":"To advance science, researchers share information they get from studying human samples. They do this by putting it into one or more scientific databases after removing identifiers such as your name and address.  Researchers can access and combine information from many studies to learn even more about health and disease, after the researcher has gone through a scientific and data security review and approval process."
+		},
+		"Identification":{
+			"header":"De-identification of Data",
+			"content":"When data are entered into computer files for anlysis, your answers will be identified only be a special study identification number. The personally identifiable information (PII) that you provide (for example, name and address) will be removed from your survey and data file."
+		}
+	},
+	"What are the risks and benefits of participating?":{
+		"Benefits":{
+			"header":"Benefits",
+			"content":"Studies like this one provide an important opportunity to collect information on factors that may affect risk of disease but participating may not benefit you directly at this time. Many people who volunteer do so with the hope that health research may improve our understanding of diseases like cancer and ultimately advance science and improve medicine. Other people hope that there will be a benefit for their children."
+		},
+		"Privacy":{
+			"header":"Privacy",
+			"content":"When you complete the online surveys and when data are entered into computer files for analysis, your answers will be identified only be a special study identification number known to you and research team members. Your social security number and any other personal identification information (PII) will be removed from your survey and data file. Even if someone broke into the data files, they would not be able to identify you. To minimize the risk of breaking into the data files, the files will be maintained on secure servers and protected by all the measures required by government computer security regulations. We will not label your stored samples with information that can identify you. We will keep any information that can be traced back to you as private as possible."
+		},
+		"Genetic":{
+			"header":"Genetic Information Nondiscrimination Act (GINA)",
+			"content":"As per GINA, group and individual health insurers may not use your genetic information to set insurance eligibility, premiums, or contribution amounts, nor can they request or require that you take a genetic test. In addition, employers with 15 or more employees may not use your genetic information to make decisions regarding hiring, firing, job assignments, or promotions, nor can they request, require, or purchase your genetic information. In Ohio, there is a similar state law that also provides some protection for private health insurance plans. GINA does not protect you against genetic discrimination by companies that sell life, disability, or long-term care insurance."
+		}
+	},
+	"What if I want to stop participating?":{
+		"Withdrawl":{
+			"header":"Withdrawl from the Study",
+			"content":"You can at any time, and without giving any reason, withdraw your consent to participate. If you want to leave the study, call ___ or email ___ to let us know. Withdrawing from the study will have no effect on your healthcare or other benefits to which you are otherwise entitled."
+		},
+		"Destruction":{
+			"header":"Destruction of Biologic Specimens",
+			"content":"If you want to have any existing biological specimens you have provided destroyed, you must send a request in writing to ______. It may not always be possible to destroy materials or data once they have been shared with other researchers."
+		}
 	}
-}}
+
+
+}

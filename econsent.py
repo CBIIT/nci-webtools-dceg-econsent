@@ -49,7 +49,7 @@ def store():
 	body = """
 	      <div style="background-color:white;border-top:25px solid #142830;border-left:2px solid #142830;border-right:2px solid #142830;border-bottom:2px solid #142830;padding:20px">
 	        Hello,<br>
-	        <p>Thank you for participating in this study. Attached is your copy of the agremeent form that you consented on """+data['timestamp']+""" using the """+product_name+"""  web application tool.</p>
+	        <p>Attached is the consent form you agrred to participate in on """+data['timestamp']+""" from the """+product_name+""".</p>
 
 	      """
 	footer = """
