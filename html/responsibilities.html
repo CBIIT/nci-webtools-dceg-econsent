@@ -6,41 +6,37 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>NextGen Cohort Electronic Consent Form</title>
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<link rel="stylesheet"href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdn.datatables.net/1.10.8/css/jquery.dataTables.min.css">
+<link rel="stylesheet" href="../../common/css/bootstrap-multiselect.css">
+<link rel="stylesheet" href="../../common/css/style.css">
+<link rel="stylesheet" href="../../common/css/social.css">
 
-<script>
-$(document).ready(function(){
-    $('[data-toggle="popover"]').popover(); 
-});
-</script>
-<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script type="text/javascript"src="http://cdnjs.cloudflare.com/ajax/libs/knockout/3.1.0/knockout-min.js"></script>
+<script type="text/javascript"src="http://cdnjs.cloudflare.com/ajax/libs/knockout.mapping/2.4.1/knockout.mapping.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-browser/0.0.7/jquery.browser.min.js"></script>
+<script type="text/javascript"src="https://cdn.datatables.net/1.10.8/js/jquery.dataTables.js"></script>
+<script type="text/javascript" src="../js/modal_content.js"></script>
 
+
+<div class="container">
+
+</div>
 </head>
 
 <body>
+<div class="container theme-showcase" role="main" >
+  
+  <a href="http://dceg.cancer.gov/" target="dceg">
+    <img class="division-logo" src="/common/images/DCEG-logo.svg" alt="Division of Cancer Epidemiology &amp; Genetics" style="min-width:300px">
+  </a>
 
-<!-- Modal -->
-<div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="modalTitle">Modal title</h4>
-      </div>
-      <div class="modal-body" id="modalContent">
-        ...
-      </div>
-      
+<div class="header" align="center">
+    <h1>Consent for Participation in the NextGen Cohort Study</h1>
     </div>
-  </div>
-</div>
-
-
-  <div>
-		<div class="header" align="center">
-		    <h1>Consent for Participation in the NextGen Cohort Study</h1>
-		</div>
 		    
 		<div class="progress">
 		  <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="28"
@@ -49,7 +45,7 @@ $(document).ready(function(){
 
 		<div class="panel panel-default">
 			<div class="panel-body">
-			<div align="center"><img src="../images/eMed_records.png" width="153" height="153" alt="Medical Records" /><img src="../images/blood_donation.png" width="153" height="153" alt="Blood Draw" /></div>
+			<div align="center"><img src="../images/eMed_records.png" width="153" height="153" alt="Medical Records" class="business-header hidden-xs hidden-sm" /><img src="../images/blood_donation.png" width="153" height="153" alt="Blood Draw" class="business-header hidden-xs hidden-sm"/></div>
 
 			<h1 align="center" id="header2">What will I be asked to do?</h1>
 			<p align="left">To help us better understand certain health conditions, we need to learn more about you.  In the study, we will ask you to: </p>
@@ -71,6 +67,34 @@ $(document).ready(function(){
 		<li><a href="data_use.html">Next <span class="glyphicon glyphicon-arrow-right"></span></a></li></ul>
 		</div>
 	</div>
-	<script type="text/javascript" src="../js/modal_content.js"></script>
+	<div class="container footer">
+	        <div class="center-block">
+	            <ul class="list-inline">
+	                <li><a target="_blank" title="Home" href="http://www.cancer.gov/">Home</a></li>
+	                <li>|</li>
+	                <li><a title="Support" target="_top" href="mailto:NCIDOSEWebAdmin@mail.nih.gov?subject=NCIDOSE">Support</a></li>
+	                <li>|</li>
+	                <li><a target="_blank" title="Policies" href="http://www.cancer.gov/global/web/policies">Policies</a></li>
+	                <li>|</li>
+	                <li><a target="_blank" title="Accessibility" href="http://www.cancer.gov/global/web/policies/accessibility">Accessibility</a></li>
+	                <li>|</li>
+	                <li><a target="_blank" title="Viewing Files" href="http://cancer.gov/global/viewing-files">Viewing Files</a></li>
+	                <li>|</li>
+	                <li><a target="_blank" title="FOIA" href="http://www.cancer.gov/global/web/policies/foia">FOIA</a></li>
+	            </ul>
+	            <ul class="list-inline">
+	                <li><a target="_blank" href="http://www.hhs.gov/">U.S. Department of Health and Human Services</a></li>
+	                <li>|</li>
+	                <li><a target="_blank" href="http://www.nih.gov">National Institutes of Health</a></li>
+	                <li>|</li>
+	                <li><a target="_blank" href="http://www.cancer.gov/">National Cancer Institute</a></li>
+	                <li>|</li>
+	                <li><a target="_blank" href="http://usa.gov">USA.gov</a></li>
+	            </ul>
+	            <div class="text-center">
+	                NIH ... Turning Discovery Into Health<sup>&reg;</sup>
+	            </div>
+	        </div>
+	</div>
 </body>
 </html>
