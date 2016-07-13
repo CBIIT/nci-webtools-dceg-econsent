@@ -20,7 +20,7 @@
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-browser/0.0.7/jquery.browser.min.js"></script>
 <script type="text/javascript"src="https://cdn.datatables.net/1.10.8/js/jquery.dataTables.js"></script>
 <script type="text/javascript" src="../js/modal_content.js"></script>
-
+<script type="text/javascript" src="../js/create_docs.js"></script>
 
 <div class="container">
 
@@ -35,21 +35,30 @@
   </a>
 
 <div class="header" align="center">
-    <h1>Consent for Participation in the NextGen Cohort Study</h1>
+   <h1 class="business-header hidden-xs hidden-sm">Consent for Participation in the NextGen Cohort Study</h1>
+       <div class="row business-header visible-xs visible-sm">
+        <div class="col-xs-4"><a href="consent.html" style="color:#337AB7"><h4 class="pull-left"><i class="fa fa-angle-left pull-left" aria-hidden="true"></i> Back</h4></div></a>
+        <div class="col-xs-4"><b><h4>Consent</h4></b></div>
+        <div class="col-xs-4"><a href="home.html" style="color:#337AB7"><h4>Cancel</h4></a></div>
+      </div> 
     </div>
 <div class="progress">
   <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="100"
   aria-valuemin="0" aria-valuemax="100" style="width:100%"></div>
 </div>    
+   <h4 class="business-header visible-xs visible-sm" align="center">Consent for Participation in the NextGen Cohort Study</h4>
+    <div id="errorMessage"></div>
 
 <div class="panel panel-default">
   <div class="panel-body">
 <div align="center"><img src="../images/consent_end.png" alt="Blood Draw" width="273" height="157" class="business-header hidden-xs hidden-sm" /></div>
-  <h1 align="center">Sign</h1>
+  <h1  align="center" id="header2" class="business-header hidden-xs hidden-sm"align="center">Sign</h1>
+  <h4  align="center" id="header2" class="business-header visible-xs visible-sm"align="center">Sign</h4>
 
 
 
-<h3 align="center">By entering your name and Email address then click Submit, you consent to participate in the study and share your data. </h3>
+<h3  align="center" id="header2" class="business-header hidden-xs hidden-sm"align="center">By entering your name and Email address then click Submit, you consent to participate in the study and share your data. </h3>
+<h5  align="center" id="header2" class="business-header visible-xs visible-sm"align="center">By entering your name and Email address then click Submit, you consent to participate in the study and share your data. </h5>
 
                       <div class="row" style="margin-bottom:10px">
                           <div class="col-md-4"></div>
@@ -66,30 +75,24 @@
                        
                         
 </div></div>
-  <div align="center">
-<button type="button" id="submit" class="btn btn-success" onclick="Create_PDF()"><span class="glyphicon glyphicon-ok-sign"></span> Submit</button>
+  <div align="center" >
+<button type="button" style="background:#337AB7;border-color:#337AB7"  class="hidden-xs hidden-sm btn btn-success " id="submit"><span class="glyphicon glyphicon-ok-sign"></span> Submit</button>
+</div>
+  <div align="center" >
+    <button type="button" style="background:#337AB7;border-color:#337AB7;width:100%"  class="visible-xs visible-sm btn btn-success " id="submit" ><span class="glyphicon glyphicon-ok-sign"></span> Submit</button>
+  </div> 
 
 
 </form>
 
-<script>
-/*$('#submit').prop('disabled', true);
-$('#consent :checkbox').change(function () {
-    var a = $('#consent :checked').filter(":checked").length;
-    if (a == 2) {
-        $('#submit').prop('disabled', false);
-    } else {
-        $('#submit').prop('disabled', true);
-    }
-});*/
-</script>
+
   
 </div>
 </div>
 <div align="center">
 <ul class="pager">
-<li><a href="consent.html"><span class="glyphicon glyphicon-arrow-left"></span> Previous</a></li>
-<li><a href="home.html"><span class="glyphicon glyphicon-remove-sign"></span> Exit Without Enrolling</a></li></ul>
+<li class="business-header hidden-xs hidden-sm"><a href="home.html"><span class="glyphicon glyphicon-remove-sign"></span> Cancel</a></li>
+<li class="business-header hidden-xs hidden-sm"><a href="consent.html"><span class="glyphicon glyphicon-arrow-left"></span> Previous</a></li>
 
 </div>
 </div>
@@ -124,3 +127,6 @@ $('#consent :checkbox').change(function () {
       </div>
 </body>
 </html>
+<script>
+
+</script>

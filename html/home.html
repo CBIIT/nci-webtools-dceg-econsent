@@ -12,6 +12,8 @@
 <link rel="stylesheet" href="../../common/css/bootstrap-multiselect.css">
 <link rel="stylesheet" href="../../common/css/style.css">
 <link rel="stylesheet" href="../../common/css/social.css">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css">
+
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
@@ -20,6 +22,7 @@
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-browser/0.0.7/jquery.browser.min.js"></script>
 <script type="text/javascript"src="https://cdn.datatables.net/1.10.8/js/jquery.dataTables.js"></script>
 <script type="text/javascript" src="../js/modal_content.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
 
 
 <div class="container">
@@ -35,28 +38,40 @@
   </a>
 
 <div class="header" align="center">
-    <h1>Consent for Participation in the NextGen Cohort Study</h1>
+   <h1 class="business-header hidden-xs hidden-sm">Consent for Participation in the NextGen Cohort Study</h1>
+       <div class="row business-header visible-xs visible-sm">
+        <div class="col-xs-4"><a href="data_use.html" style="color:#337AB7"><h4 class="pull-left"></h4></div></a>
+        <div class="col-xs-4"><b><h4>Consent</h4></b></div>
+       	<div class="col-xs-4"><a href="home.html" style="color:#337AB7"><h4>Cancel</h4></a></div>
+	    </div> 
     </div>
 		<div class="progress">
 		  <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="14"
 		  aria-valuemin="0" aria-valuemax="100" style="width:12%"></div>
 		</div>    
+   <h4 class="business-header visible-xs visible-sm" align="center">NextGen Cohort Study</h4>
 
 
 		<div class="panel panel-default">
 		  <div class="panel-body">
 		<div align="center"><img src="../images/consent_begin.png" alt="Blood Draw" width="273" height="157" class="business-header hidden-xs hidden-sm"/></div>
-		<h1 align="center">Welcome to <em>The Yet to be Named</em> Study</h1>
+		
+		<h1 align="center" class="business-header hidden-xs hidden-sm">Welcome to <em>The Yet to be Named</em> Study</h1>
+		<h4 align="center" class="business-header visible-xs visible-sm">Welcome to <em>The Yet to be Named</em> Study</h4>
+		
 		<p>Researchers at ___ and the National Cancer Institute (NCI) are doing this research study to understand the causes of cancer and other diseases.  We are working with your health care provider to enroll about 150,000 people.  We hope it will help improve the health of current and future generations.</p>
 		<p>The following pages will give you information about the study so that you can decide whether you would like to take part.  In each section, you can click “Learn more” if you wish to get more detailed information. You can also find more information on the study website at XXX.gov</p>
 		<p>If you prefer to download and print the entire consent form, please click here <a href="../docs/NextGen-consent-draft1_April11_2016.docx"><span class="glyphicon glyphicon-download-alt"></span></a>.</p>
 		</div></div>
 		<div align="center">
 		<ul class="pager">
-		<li><a href="">Close</a></li>
-		<li><a href="responsibilities.html">Next <span class="glyphicon glyphicon-arrow-right"></span></a></li></ul>
+		<li class="business-header hidden-xs hidden-sm"><a href="">Cancel</a></li>
+		<li class="business-header hidden-xs hidden-sm"><a href="responsibilities.html">Next <span class="glyphicon glyphicon-arrow-right"></span></a></li></ul>
 		</div>
-		    </div>
+	<div class="row business-header visible-xs visible-sm" style="background:#337AB7;border-radius: 10px;margin-left:1px;margin-right:1px">
+        <div class="col-xs-12" style="text-align:center"><a  style="color:white"href="responsibilities.html"><b><h4>Next</h4></b></a></div>
+	</div> 
+	</div>
 
 		<div class="container footer">
 	        <div class="center-block">
