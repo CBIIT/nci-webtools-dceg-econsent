@@ -46,7 +46,7 @@ function Create_PDF(){
 	};
 	$.ajax({
 		type : 'POST',
-		url : "/eConsentRest/",
+		url : "/econsent/eConsentRest/",
 		data : JSON.stringify(Inputs),
 		contentType : 'application/json' // JSON
 		}).success(function(token){
