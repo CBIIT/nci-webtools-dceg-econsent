@@ -65,12 +65,28 @@ function validateEmail() {
 }
 
 function addEventListeners() {
-	
+	  $('#send').prop('disabled', true);
+	  $('#send2').prop('disabled', true);
+
+	  $('#name').change(function () {
+	  	 if($('#email').val()!=""&& $('#name').val()!=""){
+	  	 	$('#send').prop('disabled', false);
+	  	 	$('#send2').prop('disabled', false);
+	  	}
+	  })
+
+	  	  $('#email').change(function () {
+	  	 	if($('#email').val()!=""&& $('#name').val()!=""){
+	  	 		$('#send').prop('disabled', false);
+	  	 		$('#send2').prop('disabled', false);
+	  		}
+	  })
+
 	$('#email').on('keydown', function(e) {
 		validateEmail();
 	});
 
-	$('#submit').click(function() {
+	$('#send').click(function() {
 		clearTransferAgreementPage();
    		 if(validateTransferAgreement()&&validateEmail()==true){
 		    $('#errorMessage').html("<font color='red'>Please fill in required field(s)</font>");
@@ -102,7 +118,6 @@ function addEventListeners() {
 function clearTransferAgreementPage(){
 	var index = 0;
 	for(index = 0; index < fields.length; index++){
-		$('#'+fields[index]).css("background-color","");
 	}
 	$('#errorMessage').hide();
 }
@@ -113,7 +128,6 @@ function validateTransferAgreement(){
 
 	for (index = 0; index < fields.length; index++){
 		if($.trim($('#' + fields[index]).val()).length == 0){
-				$('#'+fields[index]).css("background-color", "yellow");
 				hasError = true;
 	    }
 	}
